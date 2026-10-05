@@ -1,0 +1,66 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><title>El Vigía del Lago</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,800&family=Public+Sans:wght@400;600;700&display=swap"><style>
+/* Layout: a single regional-news article column, masthead on top, one note visible per QR */
+:root {
+  --bg: #f6f7f5; --paper: #ffffff; --fg: #1b2125; --muted: #5d6870; --rule: #d9dee0; --accent: #1c4e6b; --tag: #a8432a;
+  --display: "Newsreader", Georgia, "Times New Roman", serif;
+  --body: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #12171a; --paper: #192024; --fg: #e6eaec; --muted: #9aa6ad; --rule: #2c363b; --accent: #7fb3d1; --tag: #e08a6f; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #12171a; --paper: #192024; --fg: #e6eaec; --muted: #9aa6ad; --rule: #2c363b; --accent: #7fb3d1; --tag: #e08a6f; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+.wrap { max-width: 680px; margin: 0 auto; padding-inline: 18px; padding-block: 0 48px; }
+header.mast { border-bottom: 3px solid var(--accent); padding-block: 18px 10px; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap; }
+.logo { font-family: var(--display); font-weight: 800; font-size: 2rem; letter-spacing: -0.01em; color: var(--accent); line-height: 1; }
+.logo small { display: block; font-family: var(--body); font-weight: 600; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+.sections { font-size: .78rem; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+article { background: var(--paper); border: 1px solid var(--rule); padding: 22px 22px 26px; margin-top: 22px; }
+.kicker { font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--tag); }
+h1 { font-family: var(--display); font-weight: 800; font-size: clamp(1.6rem, 5vw, 2.3rem); line-height: 1.12; margin: 6px 0 10px; text-wrap: balance; }
+.bajada { font-family: var(--display); font-size: 1.15rem; color: var(--muted); margin: 0 0 14px; line-height: 1.4; }
+.meta { font-size: .8rem; color: var(--muted); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding-block: 8px; margin-bottom: 16px; font-variant-numeric: tabular-nums; }
+figure { margin: 0 0 16px; }
+figure svg { width: 100%; height: auto; display: block; border-radius: 2px; }
+figcaption { font-size: .78rem; color: var(--muted); margin-top: 6px; }
+p { margin: 0 0 14px; }
+blockquote { margin: 0 0 14px; padding-left: 14px; border-left: 3px solid var(--accent); font-family: var(--display); font-size: 1.12rem; }
+.empty { text-align: center; padding-block: 60px; color: var(--muted); }
+.empty b { display: block; font-family: var(--display); font-size: 1.5rem; color: var(--fg); margin-bottom: 8px; }
+footer { font-size: .75rem; color: var(--muted); margin-top: 28px; text-align: center; }
+
+.tv { margin: 18px 0 0; background:#000; border-radius:4px; overflow:hidden; position:relative; }
+.tv video { width:100%; display:block; aspect-ratio:16/9; background:#000; }
+.tvnote { font-size:.8rem; color:var(--muted); margin-top:6px; display:flex; gap:8px; align-items:center; }
+.tvnote b { color:var(--tag); letter-spacing:.08em; font-size:.72rem; }
+.ficcion { font-size:.72rem; color:var(--muted); text-align:center; margin-top:10px; }
+</style></head><body>
+<div class="wrap">
+<header class="mast">
+    <div class="logo">El Vigía del Lago<small>Diario digital de Valle Escondido</small></div>
+    <div class="sections">Policiales · Sociedad · Economía</div>
+  </header>
+<div class="tv"><video src="v.mp4" poster="p.jpg" controls playsinline x-webkit-airplay="allow" preload="metadata"></video></div>
+<div class="tvnote"><b>VIGÍA NOTICIAS</b> Tocá ▶ para ver el informe. Con sonido.</div>
+<article id="n9">
+    <div class="kicker">Economía · Ciudad</div>
+    <h1>¿Se vende el Teatro El Ombú?</h1>
+    <p class="bajada">Un grupo inversor de Buenos Aires habría hecho una oferta por el edificio de calle San Martín. Su dueño, Gastón Ferrari, no lo confirma ni lo desmiente.</p>
+    <div class="meta">Viernes 25 de septiembre de 2026 · 18:45 · Redacción El Vigía</div>
+<figure><svg viewBox="0 0 640 300" role="img" aria-label="Ilustración de la fachada del Teatro El Ombú de día">
+<rect width="640" height="300" fill="#a9cbe0"/><g fill="#fff" opacity=".8"><ellipse cx="120" cy="50" rx="50" ry="14"/><ellipse cx="500" cy="38" rx="60" ry="16"/></g>
+<rect y="240" width="640" height="60" fill="#8c8c86"/><rect y="236" width="640" height="6" fill="#bdbdb5"/>
+<rect x="150" y="70" width="340" height="170" fill="#d6c4a0"/><polygon points="140,70 320,30 500,70" fill="#a68b62"/>
+<g fill="#ece0c6"><rect x="170" y="80" width="14" height="150"/><rect x="456" y="80" width="14" height="150"/></g>
+<rect x="200" y="92" width="240" height="40" fill="#6b1e1e"/><text x="320" y="118" font-family="Georgia,serif" font-size="15" fill="#f6d77a" text-anchor="middle" font-weight="bold">TEATRO EL OMBÚ</text>
+<g fill="#5a3f33"><rect x="215" y="150" width="40" height="80"/><rect x="300" y="150" width="40" height="80"/><rect x="385" y="150" width="40" height="80"/></g>
+<g transform="translate(520,140)"><rect x="-4" y="0" width="8" height="100" fill="#5a4636"/><circle cx="0" cy="-10" r="48" fill="#4f7a3a"/><circle cx="-30" cy="10" r="30" fill="#5d8a44"/><circle cx="30" cy="8" r="32" fill="#46703a"/></g>
+</svg><figcaption>La fachada del Teatro El Ombú y su ombú centenario, sobre calle San Martín. Ilustración: El Vigía.</figcaption></figure>
+    <p>En el ambiente cultural de Valle Escondido no se habla de otra cosa. Según fuentes cercanas al teatro, representantes de un grupo de Buenos Aires que maneja salas en la capital visitaron el Ombú dos veces en septiembre. La propuesta incluiría convertir la sala en un complejo de cine y gastronomía.</p>
+    <p>Consultado por este diario, Gastón Ferrari respondió con una sonrisa: "Un mago nunca revela su próximo truco". Su estreno, "Ilusiones del Sur", está previsto para el viernes 2 de octubre.</p>
+    <p>Quien no sonríe es Hugo Salvatierra, director artístico de la sala desde hace treinta años. "Si lo venden, se termina una historia. Yo entré acá como acomodador", dijo, visiblemente preocupado. Trabajadores de la cafetería y la boletería también temen por sus puestos.</p>
+    <p>En el ambiente también se comenta que la productora que maneja las giras del mago tuvo un año difícil, después de que se cancelara una gira por Córdoba. Desde Ferrari Producciones no quisieron hacer declaraciones.</p>
+  </article>
+<footer>El Vigía del Lago es un diario ficticio.<div class="ficcion">Contenido ficticio de un juego de misterio. Personas, lugares, empresas y hechos son inventados.<br>Voces del video generadas con ElevenLabs (elevenlabs.io).</div></footer>
+</div></body></html>

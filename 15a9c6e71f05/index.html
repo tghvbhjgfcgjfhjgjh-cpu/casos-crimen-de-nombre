@@ -1,0 +1,69 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><title>El Vigía del Lago</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,800&family=Public+Sans:wght@400;600;700&display=swap"><style>
+/* Layout: a single regional-news article column, masthead on top, one note visible per QR */
+:root {
+  --bg: #f6f7f5; --paper: #ffffff; --fg: #1b2125; --muted: #5d6870; --rule: #d9dee0; --accent: #1c4e6b; --tag: #a8432a;
+  --display: "Newsreader", Georgia, "Times New Roman", serif;
+  --body: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #12171a; --paper: #192024; --fg: #e6eaec; --muted: #9aa6ad; --rule: #2c363b; --accent: #7fb3d1; --tag: #e08a6f; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #12171a; --paper: #192024; --fg: #e6eaec; --muted: #9aa6ad; --rule: #2c363b; --accent: #7fb3d1; --tag: #e08a6f; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+.wrap { max-width: 680px; margin: 0 auto; padding-inline: 18px; padding-block: 0 48px; }
+header.mast { border-bottom: 3px solid var(--accent); padding-block: 18px 10px; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap; }
+.logo { font-family: var(--display); font-weight: 800; font-size: 2rem; letter-spacing: -0.01em; color: var(--accent); line-height: 1; }
+.logo small { display: block; font-family: var(--body); font-weight: 600; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+.sections { font-size: .78rem; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+article { background: var(--paper); border: 1px solid var(--rule); padding: 22px 22px 26px; margin-top: 22px; }
+.kicker { font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--tag); }
+h1 { font-family: var(--display); font-weight: 800; font-size: clamp(1.6rem, 5vw, 2.3rem); line-height: 1.12; margin: 6px 0 10px; text-wrap: balance; }
+.bajada { font-family: var(--display); font-size: 1.15rem; color: var(--muted); margin: 0 0 14px; line-height: 1.4; }
+.meta { font-size: .8rem; color: var(--muted); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding-block: 8px; margin-bottom: 16px; font-variant-numeric: tabular-nums; }
+figure { margin: 0 0 16px; }
+figure svg { width: 100%; height: auto; display: block; border-radius: 2px; }
+figcaption { font-size: .78rem; color: var(--muted); margin-top: 6px; }
+p { margin: 0 0 14px; }
+blockquote { margin: 0 0 14px; padding-left: 14px; border-left: 3px solid var(--accent); font-family: var(--display); font-size: 1.12rem; }
+.empty { text-align: center; padding-block: 60px; color: var(--muted); }
+.empty b { display: block; font-family: var(--display); font-size: 1.5rem; color: var(--fg); margin-bottom: 8px; }
+footer { font-size: .75rem; color: var(--muted); margin-top: 28px; text-align: center; }
+
+.tv { margin: 18px 0 0; background:#000; border-radius:4px; overflow:hidden; position:relative; }
+.tv video { width:100%; display:block; aspect-ratio:16/9; background:#000; }
+.tvnote { font-size:.8rem; color:var(--muted); margin-top:6px; display:flex; gap:8px; align-items:center; }
+.tvnote b { color:var(--tag); letter-spacing:.08em; font-size:.72rem; }
+.ficcion { font-size:.72rem; color:var(--muted); text-align:center; margin-top:10px; }
+</style></head><body>
+<div class="wrap">
+<header class="mast">
+    <div class="logo">El Vigía del Lago<small>Diario digital de Valle Escondido</small></div>
+    <div class="sections">Policiales · Sociedad · Economía</div>
+  </header>
+<div class="tv"><video src="v.mp4" poster="p.jpg" controls playsinline x-webkit-airplay="allow" preload="metadata"></video></div>
+<div class="tvnote"><b>VIGÍA NOTICIAS</b> Tocá ▶ para ver el informe. Con sonido.</div>
+<article id="n7">
+    <div class="kicker">Policiales · Valle Escondido</div>
+    <h1>Murió El Gran Ferrari en pleno estreno</h1>
+    <p class="bajada">El mago más famoso de la Patagonia sufrió una reacción alérgica grave en el intervalo de "Ilusiones del Sur". Su autoinyector no funcionó. La Fiscalía investiga.</p>
+    <div class="meta">Sábado 3 de octubre de 2026 · 08:10 · Redacción El Vigía</div>
+<figure><svg viewBox="0 0 640 300" role="img" aria-label="Ilustración del Teatro El Ombú de noche con una ambulancia">
+<rect width="640" height="300" fill="#171c2b"/><circle cx="0" cy="8" r="1.6" fill="#f4f1e6" opacity=".7"/><circle cx="97" cy="61" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="194" cy="114" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="291" cy="57" r="1.6" fill="#f4f1e6" opacity=".7"/><circle cx="388" cy="110" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="485" cy="53" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="582" cy="106" r="1.6" fill="#f4f1e6" opacity=".7"/><circle cx="39" cy="49" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="136" cy="102" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="233" cy="45" r="1.6" fill="#f4f1e6" opacity=".7"/><circle cx="330" cy="98" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="427" cy="41" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="524" cy="94" r="1.6" fill="#f4f1e6" opacity=".7"/><circle cx="621" cy="37" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="78" cy="90" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="175" cy="33" r="1.6" fill="#f4f1e6" opacity=".7"/><circle cx="272" cy="86" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="369" cy="29" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="466" cy="82" r="1.6" fill="#f4f1e6" opacity=".7"/><circle cx="563" cy="25" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="20" cy="78" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="117" cy="21" r="1.6" fill="#f4f1e6" opacity=".7"/><circle cx="214" cy="74" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="311" cy="17" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="408" cy="70" r="1.6" fill="#f4f1e6" opacity=".7"/><circle cx="505" cy="13" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="602" cy="66" r="1" fill="#f4f1e6" opacity=".7"/><circle cx="59" cy="9" r="1.6" fill="#f4f1e6" opacity=".7"/>
+<rect y="235" width="640" height="65" fill="#2a2a2e"/>
+<rect x="150" y="70" width="340" height="170" fill="#b9a382"/><polygon points="140,70 320,30 500,70" fill="#8a7458"/>
+<g fill="#d8c8a6"><rect x="170" y="80" width="14" height="150"/><rect x="456" y="80" width="14" height="150"/></g>
+<rect x="200" y="92" width="240" height="40" fill="#6b1e1e"/><g fill="#f6d77a"><circle cx="206" cy="96" r="2.5"/><circle cx="206" cy="128" r="2.5"/><circle cx="218" cy="96" r="2.5"/><circle cx="218" cy="128" r="2.5"/><circle cx="230" cy="96" r="2.5"/><circle cx="230" cy="128" r="2.5"/><circle cx="242" cy="96" r="2.5"/><circle cx="242" cy="128" r="2.5"/><circle cx="254" cy="96" r="2.5"/><circle cx="254" cy="128" r="2.5"/><circle cx="266" cy="96" r="2.5"/><circle cx="266" cy="128" r="2.5"/><circle cx="278" cy="96" r="2.5"/><circle cx="278" cy="128" r="2.5"/><circle cx="290" cy="96" r="2.5"/><circle cx="290" cy="128" r="2.5"/><circle cx="302" cy="96" r="2.5"/><circle cx="302" cy="128" r="2.5"/><circle cx="314" cy="96" r="2.5"/><circle cx="314" cy="128" r="2.5"/><circle cx="326" cy="96" r="2.5"/><circle cx="326" cy="128" r="2.5"/><circle cx="338" cy="96" r="2.5"/><circle cx="338" cy="128" r="2.5"/><circle cx="350" cy="96" r="2.5"/><circle cx="350" cy="128" r="2.5"/><circle cx="362" cy="96" r="2.5"/><circle cx="362" cy="128" r="2.5"/><circle cx="374" cy="96" r="2.5"/><circle cx="374" cy="128" r="2.5"/><circle cx="386" cy="96" r="2.5"/><circle cx="386" cy="128" r="2.5"/><circle cx="398" cy="96" r="2.5"/><circle cx="398" cy="128" r="2.5"/><circle cx="410" cy="96" r="2.5"/><circle cx="410" cy="128" r="2.5"/><circle cx="422" cy="96" r="2.5"/><circle cx="422" cy="128" r="2.5"/><circle cx="434" cy="96" r="2.5"/><circle cx="434" cy="128" r="2.5"/></g>
+<text x="320" y="111" font-family="Georgia,serif" font-size="13" fill="#f6d77a" text-anchor="middle" font-weight="bold">TEATRO EL OMBÚ</text>
+<text x="320" y="125" font-family="Arial" font-size="9" fill="#fff" text-anchor="middle" letter-spacing="1">ILUSIONES DEL SUR · ESTRENO</text>
+<g fill="#f2d48a"><rect x="215" y="150" width="40" height="80"/><rect x="300" y="150" width="40" height="80"/><rect x="385" y="150" width="40" height="80"/></g>
+<g transform="translate(470,205)"><rect width="140" height="40" rx="5" fill="#f4f4f0"/><rect x="100" y="-12" width="40" height="22" rx="4" fill="#f4f4f0"/><rect x="0" y="16" width="140" height="6" fill="#d63a2f"/><rect x="20" y="4" width="20" height="8" fill="#d63a2f"/><rect x="26" y="-2" width="8" height="20" fill="#d63a2f"/><rect x="112" y="-18" width="10" height="7" fill="#2f6fd6"/><circle cx="28" cy="40" r="10" fill="#111"/><circle cx="114" cy="40" r="10" fill="#111"/></g>
+</svg><figcaption>La entrada del Teatro El Ombú, sobre calle San Martín, en la noche del estreno. Ilustración: El Vigía.</figcaption></figure>
+    <p>La sala del Teatro El Ombú estaba llena. Trescientas veinte personas aplaudieron de pie el primer acto de "Ilusiones del Sur", el nuevo espectáculo de Gastón Ferrari, 47 años, conocido por todos como El Gran Ferrari. A las diez de la noche se anunció el intervalo. El segundo acto nunca empezó.</p>
+    <p>"Pasados unos minutos se apagaron las luces de la sala y alguien dijo por el micrófono que la función se suspendía. Pensamos que era parte del show", contó Graciela, vecina del barrio Los Pinos. "Después vimos la ambulancia en la puerta y nadie se reía más."</p>
+    <p>Según pudo saber este diario, Ferrari tomó en su camarín el té con miel que bebía en cada intervalo desde hace años. Minutos después empezó a sentir que se le cerraba la garganta. El mago era alérgico severo al maní, algo que sabía todo el teatro. Su asistente intentó aplicarle el autoinyector de adrenalina que siempre tenía a mano en el camarín, pero, por motivos que se investigan, el dispositivo no hizo efecto.</p>
+    <p>Los paramédicos lo trasladaron al Hospital Regional, donde murió a las 22:52. La fiscal Mercedes Aranda, de la Fiscalía N.º 2, ordenó clausurar los camarines y citar a declarar a todas las personas que estaban detrás del telón. "No descartamos ninguna hipótesis", dijo.</p>
+    <blockquote>"Gastón jamás improvisaba. Revisaba todo dos veces. Que justo hoy le falle todo… no lo entiendo." — Un empleado del teatro que pidió reserva de su nombre.</blockquote>
+  </article>
+<footer>El Vigía del Lago es un diario ficticio.<div class="ficcion">Contenido ficticio de un juego de misterio. Personas, lugares, empresas y hechos son inventados.<br>Voces del video generadas con ElevenLabs (elevenlabs.io).</div></footer>
+</div></body></html>

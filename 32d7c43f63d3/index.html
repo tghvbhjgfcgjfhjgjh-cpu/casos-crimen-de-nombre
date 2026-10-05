@@ -1,0 +1,67 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><title>El Vigía del Lago</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,800&family=Public+Sans:wght@400;600;700&display=swap"><style>
+/* Layout: a single regional-news article column, masthead on top, one note visible per QR */
+:root {
+  --bg: #f6f7f5; --paper: #ffffff; --fg: #1b2125; --muted: #5d6870; --rule: #d9dee0; --accent: #1c4e6b; --tag: #a8432a;
+  --display: "Newsreader", Georgia, "Times New Roman", serif;
+  --body: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #12171a; --paper: #192024; --fg: #e6eaec; --muted: #9aa6ad; --rule: #2c363b; --accent: #7fb3d1; --tag: #e08a6f; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #12171a; --paper: #192024; --fg: #e6eaec; --muted: #9aa6ad; --rule: #2c363b; --accent: #7fb3d1; --tag: #e08a6f; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6; }
+.wrap { max-width: 680px; margin: 0 auto; padding-inline: 18px; padding-block: 0 48px; }
+header.mast { border-bottom: 3px solid var(--accent); padding-block: 18px 10px; display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; flex-wrap: wrap; }
+.logo { font-family: var(--display); font-weight: 800; font-size: 2rem; letter-spacing: -0.01em; color: var(--accent); line-height: 1; }
+.logo small { display: block; font-family: var(--body); font-weight: 600; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+.sections { font-size: .78rem; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+article { background: var(--paper); border: 1px solid var(--rule); padding: 22px 22px 26px; margin-top: 22px; }
+.kicker { font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--tag); }
+h1 { font-family: var(--display); font-weight: 800; font-size: clamp(1.6rem, 5vw, 2.3rem); line-height: 1.12; margin: 6px 0 10px; text-wrap: balance; }
+.bajada { font-family: var(--display); font-size: 1.15rem; color: var(--muted); margin: 0 0 14px; line-height: 1.4; }
+.meta { font-size: .8rem; color: var(--muted); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding-block: 8px; margin-bottom: 16px; font-variant-numeric: tabular-nums; }
+figure { margin: 0 0 16px; }
+figure svg { width: 100%; height: auto; display: block; border-radius: 2px; }
+figcaption { font-size: .78rem; color: var(--muted); margin-top: 6px; }
+p { margin: 0 0 14px; }
+blockquote { margin: 0 0 14px; padding-left: 14px; border-left: 3px solid var(--accent); font-family: var(--display); font-size: 1.12rem; }
+.empty { text-align: center; padding-block: 60px; color: var(--muted); }
+.empty b { display: block; font-family: var(--display); font-size: 1.5rem; color: var(--fg); margin-bottom: 8px; }
+footer { font-size: .75rem; color: var(--muted); margin-top: 28px; text-align: center; }
+
+.tv { margin: 18px 0 0; background:#000; border-radius:4px; overflow:hidden; position:relative; }
+.tv video { width:100%; display:block; aspect-ratio:16/9; background:#000; }
+.tvnote { font-size:.8rem; color:var(--muted); margin-top:6px; display:flex; gap:8px; align-items:center; }
+.tvnote b { color:var(--tag); letter-spacing:.08em; font-size:.72rem; }
+.ficcion { font-size:.72rem; color:var(--muted); text-align:center; margin-top:10px; }
+</style></head><body>
+<div class="wrap">
+<header class="mast">
+    <div class="logo">El Vigía del Lago<small>Diario digital de Valle Escondido</small></div>
+    <div class="sections">Policiales · Sociedad · Economía</div>
+  </header>
+<div class="tv"><video src="v.mp4" poster="p.jpg" controls playsinline x-webkit-airplay="allow" preload="metadata"></video></div>
+<div class="tvnote"><b>VIGÍA NOTICIAS</b> Tocá ▶ para ver el informe. Con sonido.</div>
+<article id="n3">
+    <div class="kicker">Cultura</div>
+    <h1>Un joven del pueblo ganó el concurso regional de fotografía nocturna</h1>
+    <p class="bajada">Tomás Varela, de 25 años, se impuso con una serie de fotos del invernadero de su tío iluminado con linternas.</p>
+    <div class="meta">Jueves 3 de julio de 2025 · 18:45 · Sección Cultura</div>
+    <figure>
+      <svg viewBox="0 0 640 260" role="img" aria-label="Ilustración de un invernadero de noche con haces de linterna">
+        <rect width="640" height="260" fill="#0f1a24"/>
+        <g fill="#fff"><circle cx="60" cy="30" r="1.5"/><circle cx="140" cy="60" r="1"/><circle cx="530" cy="40" r="1.5"/><circle cx="600" cy="80" r="1"/><circle cx="420" cy="25" r="1"/></g>
+        <polygon points="200,220 200,110 320,60 440,110 440,220" fill="#1f3b44" stroke="#7fb3d1" stroke-width="2"/>
+        <polygon points="250,220 300,120 360,120 410,220" fill="#f2e3a0" opacity=".35"/>
+        <circle cx="330" cy="225" r="6" fill="#f2e3a0"/>
+        <rect y="220" width="640" height="40" fill="#14221a"/>
+      </svg>
+      <figcaption>"Luz en el invernadero", la serie ganadora. Ilustración basada en la foto original.</figcaption>
+    </figure>
+    <p>Tomás Varela, recepcionista de un hotel del lago y fotógrafo aficionado, ganó el primer premio del Concurso Regional de Fotografía Nocturna con la serie "Luz en el invernadero", tomada en la propiedad de su tío, el empresario Esteban Varela.</p>
+    <p>"Salgo de noche con una linterna y la cámara en trípode. Recorro el jardín y el invernadero buscando sombras. En mi casa ya se acostumbraron a ver una lucecita moviéndose por el fondo", contó entre risas.</p>
+    <p>Las fotos se expondrán durante julio en la Biblioteca Popular.</p>
+  </article>
+<footer>El Vigía del Lago es un diario ficticio.<div class="ficcion">Contenido ficticio de un juego de misterio. Personas, lugares, empresas y hechos son inventados.<br>Voces del video generadas con ElevenLabs (elevenlabs.io).</div></footer>
+</div></body></html>
